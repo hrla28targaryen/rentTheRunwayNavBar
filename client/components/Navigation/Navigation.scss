@@ -1,0 +1,143 @@
+.headerLinks {
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-flex: 1;
+    flex: 1;
+    .nav {
+        list-style: none;
+        margin-left: -15px;
+        opacity: 1;
+        transition: opacity 0.75s ease-in-out;
+
+        .navGroup {
+            float: left;
+            position: static;
+
+            .navGroupTitle {
+                font-family: EngraversGothic BT, serif;
+                letter-spacing: 2px;
+                font-size: 14px;
+                text-transform: uppercase;
+                line-height: 90px;
+                height: 90px;
+                position: relative;
+                z-index: 1;
+            }
+
+            .navItem {
+                display: block;
+                text-decoration: none;
+                padding: 0 15px;
+                color: black;
+            }
+
+            .navMenuWrapper{    
+                display: none;
+                opacity: 0;
+                color: #333333;
+                background-color: #FFFFFF;
+                border: 1px solid #DDDDDD;
+                position: absolute;
+                left: 0;
+                width: 100%;
+                height: 420px;
+                overflow: hidden;
+            }
+        }
+
+        .caret {
+            position: absolute;
+            margin: auto;
+            bottom: -6px;
+            left: 35%;
+            width: 12px;
+            height: 12px;
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            border-top: 1px solid #dddddd;
+            border-left: 1px solid #dddddd;
+            background-color: #ffffff;
+            display: none;   
+            opacity: 0;         
+        }
+
+        .navGroup:hover .navMenuWrapper, .navGroup:active .navMenuWrapper, .navGroup:hover .caret{
+            display: block;
+            opacity: 1;
+        }
+    }
+
+    .navSearch {
+        margin-left: 13px;
+        overflow: visible;
+        width: 25px;
+        transition: background-color 0.5s ease-in-out;
+    
+        label {
+            position: absolute;
+            display: block;
+            width: 0;
+            height: 0;
+            overflow: hidden;
+            white-space: nowrap;
+            text-indent: 10px;
+            text-transform: uppercase;
+            text-align: left;
+            letter-spacing: 1px;
+            font-size: 11px;
+            line-height: 23px;
+            margin-bottom: 7px;
+            color: #333333;
+        }
+    
+        .navSearchQuery {
+            float: right;
+            width: 0px;
+            padding-left: 10px;
+            padding-right: 25px;
+            border: 1px solid transparent;
+            background: transparent url(https://s3.amazonaws.com/hrla28renttherunway/icons/Search_icon.svg) no-repeat right;
+            background-size: contain;
+            transition: all 0.5s ease-in-out;
+            outline: 0;
+            height: 30px;
+            -webkit-appearance: none;
+            appearance: none;
+        }
+    
+        .navSearchQuery:focus {
+            width: 450px;
+            border: 1px solid #333333;
+            color: #333333;
+        }
+
+        .navSearchQuery:focus .nav {
+            display: none;
+        }
+    
+        .navSearchQueryClear {
+            display: none;
+            background-color: #DADADA;
+            color: #FFFFFF;
+            border-radius: 50%;
+        }
+    
+        button  {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 150%;
+        }
+    }
+    
+    .navSearchQuery {
+        outline: 0;
+        height: 30px;
+    }
+        
+}

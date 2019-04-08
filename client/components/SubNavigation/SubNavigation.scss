@@ -1,0 +1,76 @@
+.subNavigation {
+    margin-left: 115px;
+    padding-left: 21px;
+    padding-right: 21px;
+    width: 100%;
+    zoom: 1;
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 0;
+    line-height: 30px;
+
+    .subNavigationBlock {
+        float: left;
+        height: 370px;
+        position: relative;
+        display: inline-flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: flex-start;
+        list-style-type: none;
+        width: 200px;
+
+        .image {
+            width: 400px;
+            line-height: 20px;
+            padding-right: 30px;
+
+            img {
+                width: 100%;
+                height: auto;
+                margin-bottom: 10px;
+            }
+        }
+
+        .subNavigationList {
+            -webkit-flex: 0 0 auto;
+            flex: 0 0 auto;
+            width: 200px;
+            margin-bottom: 20px;
+            height: 100%;
+
+            .title {
+                font-family: 'EngraversGothic BT', serif;
+                text-transform: uppercase;
+                font-size: 12px;
+                letter-spacing: 2px;
+                line-height: 18px;
+                padding-bottom: 8px;
+            }
+
+            .title:hover {
+                border-bottom: 1px solid black;
+            }
+
+
+            .sectionList {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                font-size: 14px;
+
+                li {
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    }
+
+                    a:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}

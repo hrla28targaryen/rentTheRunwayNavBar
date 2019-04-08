@@ -1,0 +1,66 @@
+.navSearch {
+    margin-left: 13px;
+    overflow: visible;
+    width: 25px;
+    transition: background-color 0.5s ease-in-out;
+
+    label {
+        position: absolute;
+        display: block;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        white-space: nowrap;
+        text-indent: 10px;
+        text-transform: uppercase;
+        text-align: left;
+        letter-spacing: 1px;
+        font-size: 11px;
+        line-height: 23px;
+        margin-bottom: 7px;
+        color: #333333;
+    }
+
+    .navSearchQuery {
+        float: right;
+        width: 25px;
+        padding-left: 10px;
+        padding-right: 25px;
+        border: 1px solid transparent;
+        background: transparent url(https://s3.amazonaws.com/hrla28renttherunway/icons/Search_icon.svg) no-repeat right;
+        background-size: contain;
+        transition: all 0.5s ease-in-out;
+        outline: 0;
+        height: 30px;
+    }
+
+    .navSearchQuery:focus {
+        width: 450px;
+        border: 1px solid #333333;
+        color: #333333;
+
+        .nav {
+            opacity: 0;
+        }
+    }
+
+    .navSearchQueryClear {
+        display: none;
+        background-color: #DADADA;
+        color: #FFFFFF;
+        border-radius: 50%;
+    }
+
+    button  {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 150%;
+    }
+}
+
+.navSearchQuery {
+    outline: 0;
+    height: 30px;
+}
+
