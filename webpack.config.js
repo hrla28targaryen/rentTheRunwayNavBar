@@ -7,6 +7,8 @@ module.exports = {
   output: {
     path: __dirname + '/dist',
     filename: 'bundle.js',
+    library: "reactApp",
+    libraryTarget: "window"
   },
   module: {
     rules: [
@@ -42,5 +44,10 @@ module.exports = {
   },
   resolve: {
     extensions: ['.js', '.jsx', '.json']
-  } 
+  },
+  plugins: [
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify('production')
+    })
+   ] 
 };

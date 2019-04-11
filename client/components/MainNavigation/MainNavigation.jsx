@@ -23,7 +23,6 @@ class MainNavigation extends React.Component {
         var visible = !!opacity ? 'translateY(0px)' : 'translateY(-120px)';
         console.log(visible);
         return(
-            <div>
             <div className={style.mainHeader} style={{
                 transform: `${visible}`,
                 transition: 'transform 300ms linear',
@@ -36,8 +35,6 @@ class MainNavigation extends React.Component {
                     </div>
                     <Navigation />
                 </div>
-            </div>
-            <div style={{ height: '1200px', backgroundColor: 'white'}}></div>
             </div>
         );
     }
