@@ -1,38 +1,22 @@
 {
   "name": "navbarservice",
   "version": "1.0.0",
-  "description": "",
-  "main": "bundle.js",
-  "scripts": {
-    "test": "jest",
-    "dev": "webpack --mode development --watch",
-    "build": "webpack --mode production --watch",
-    "start": "nodemon ./server/server.js",
-    "seed": "node ./database/seed.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "description": "> NavBar section of RentTheRunway a responsive navigation bar built in React with styling in SASS and CSS Modules",
+  "main": "webpack.config.js",
   "dependencies": {
-    "asyncawait": "^1.0.8",
     "axios": "^0.18.0",
-    "bluebird": "^3.5.3",
-    "body-parser": "^1.18.3",
+    "bluebird": "^3.5.4",
     "classnames": "^2.2.6",
     "css-loader": "^2.1.1",
     "express": "^4.16.4",
     "file-loader": "^3.0.1",
-    "jest": "^24.5.0",
-    "moment": "^2.24.0",
-    "mongoose": "^5.4.20",
     "morgan": "^1.9.1",
     "node-sass": "^4.11.0",
-    "nodemon": "^1.18.10",
+    "nodemon": "^1.18.11",
     "prop-types": "^15.7.2",
-    "react": "^16.8.5",
-    "react-dom": "^16.8.5",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "sass-loader": "^7.1.0",
-    "single-spa-react": "^2.10.0",
     "style-loader": "^0.23.1",
     "url-loader": "^1.1.2"
   },
@@ -53,5 +37,21 @@
     "webpack-combine-loaders": "^2.0.4",
     "webpack-dev-server": "^3.2.1"
   },
-  "proxy": "http://localhost:3004"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development --watch",
+    "build": "webpack --mode production --watch",
+    "start": "nodemon ./server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hrla28targaryen/rentTheRunwayNavBar.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hrla28targaryen/rentTheRunwayNavBar/issues"
+  },
+  "homepage": "https://github.com/hrla28targaryen/rentTheRunwayNavBar#readme"
 }
