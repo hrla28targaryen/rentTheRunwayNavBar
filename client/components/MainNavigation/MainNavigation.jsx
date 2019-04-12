@@ -2,6 +2,7 @@ import React from 'react';
 import Navigation from '../Navigation/Navigation.jsx';
 import style from './MainNavigation.scss';
 import Logo from '../Logo/Logo.jsx';
+import Collapsible from 'react-collapsible';
 
 class MainNavigation extends React.Component {
     constructor(props) {
@@ -34,6 +35,14 @@ class MainNavigation extends React.Component {
                         </a>
                     </div>
                     <Navigation />
+                </div>
+                <div className="skinny-banner-content" className={style.bannerContent}>
+                    $80 Off 60-Day Unlimited Trial or 20% Off First Order with code: SOSMART
+                    <Collapsible transitionTime={10} trigger="DETAILS" className={style.detailButton}>
+                        <div className={style.difficultDiv}>
+                            <p className={style.detailsSmall}>Code applies 20% off first RTR Reserve rental and reduces Update to $69 (1st mo. only), OR reduces Unlimited to $119 (1st and 2nd mo.). Valid only for new customers. Cannot be applied to PRO, existing memberships, existing orders, purchases of gift cards, gift credits, bridal packages or services, or other items for sale. Offer subject to end without notice.</p>
+                        </div>
+                    </Collapsible>
                 </div>
             </div>
         );

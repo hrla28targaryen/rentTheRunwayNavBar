@@ -7,6 +7,77 @@
     font-family: 'Proxima Nova Regular';
     src: url('../../../dist/Proxima_Nova_Reg.ttf');
 }
+.bannerContent {
+    background-color: rgb(206, 220, 210);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: 'Proxima Nova Regular';
+    font-size: 13px;
+    line-height: 15px;
+    height: 29px;
+    padding: 7px 0;
+    margin: 0;
+    display: block;
+}
+// .bannerContent .Collapsible {
+//     background-color: red;
+//     border-bottom: 1px solid transparent !important;
+//     padding: 0;
+//     display: inline;
+//     text-transform: none;
+//     letter-spacing: 0;
+//     .Collapsible__trigger {
+//         margin-left: 5px;
+//         cursor: pointer;
+//         font-family: 'Proxima Nova Regular';
+//     }
+// }
+
+
+.detailButton {
+    display: inline;
+    text-transform: none;
+    letter-spacing: 0;
+    cursor: pointer;
+    font-family: 'Proxima Nova Regular';
+    text-decoration: underline;
+    color: black;
+    border-bottom: 0;
+    display: inline;
+}
+.detailButton {
+    .Collapsible {
+        background-color: black;
+    }
+}
+.detailButton span{
+    display: inline;
+    // text-transform: none;
+    letter-spacing: 0;
+    margin-left: 5px;
+    cursor: pointer;
+    font-family: 'Proxima Nova Regular';
+    text-decoration: underline;
+    color: black;
+    border-bottom: 0;
+    display: inline;
+}
+.difficultDiv{
+    background-color: rgb(206, 220, 210);
+    width: 100%;
+}
+.detailsSmall {
+    width: 650px;
+    padding-top: 10px;
+    max-height: 200px;
+    margin: 0 auto;
+    overflow: hidden;
+    font-family: 'Proxima Nova Regular';
+    font-size: 13px;
+    text-transform: none;
+    color: black;
+    letter-spacing: 0;
+}
 
 .mainHeader {
     position: fixed;

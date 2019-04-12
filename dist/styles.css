@@ -1,26 +1,38 @@
-.Collapsible {
-  border-bottom: 1px solid #DDDDDD;
+@font-face {
+  font-family: 'EngraversGothic BT';
+  src: url('./Engravers_Gothic_Regular.otf');
+}
+
+@font-face {
+  font-family: 'Proxima Nova Regular';
+  src: url('./Proxima_Nova_Reg.ttf');
+}
+#app .Collapsible {
   padding: 15px 0;
   border: 0;
   cursor: pointer;
-  display: block;
-  text-transform: uppercase;
-  font-family: EngraversGothic BT, serif;
-  text-transform: uppercase;
+  display: inline;
+  text-transform: none;
+  font-family: 'Proxima Nova Regular';
   font-size: 12px;
   letter-spacing: 2px;
   line-height: 18px;
-  color: #999999;
-  transition: none;
-  border-bottom: 1px solid #DDDDDD;
-}
-.Collapsible span:after {
-  content: "\2212";
-  color: #999999;
-  font-size: 15px;
-  float: right;
+  color: black;
   transition: none;
 }
+#app .Collapsible__trigger {
+  border: 0;
+  margin-left: 5px;
+  text-transform: none;
+  letter-spacing: 0;
+  display: inline;
+  font-family: 'Proxima Nova Regular';
+  font-size: 12px;
+  letter-spacing: 2px;
+  line-height: 18px;
+  /* background-color: blue; */
+}
+
 u {
   cursor: pointer;
 }
