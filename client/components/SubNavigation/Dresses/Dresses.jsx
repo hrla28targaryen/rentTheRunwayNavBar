@@ -6,7 +6,7 @@ class Dresses extends React.Component {
         super(props);
 
         this.state = {
-            image: 'https://s3.amazonaws.com/hrla28renttherunway/navbar/Dresses.jpg',
+            image: 'https://s3.amazonaws.com/renttherunwayhrla28/navbar/Dresses.jpg',
             sections : [
                 {
                     title: 'Trending',

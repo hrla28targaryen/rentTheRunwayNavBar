@@ -6,7 +6,7 @@ class NewArrivals extends React.Component {
         super(props);
 
         this.state = {
-            image: 'https://s3.amazonaws.com/hrla28renttherunway/navbar/WhatsNew.jpg',
+            image: 'https://s3.amazonaws.com/renttherunwayhrla28/navbar/WhatsNew.jpg',
             sections : [
                 {
                     title: 'The Weekly Upload',

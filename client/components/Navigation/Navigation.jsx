@@ -30,6 +30,14 @@ class Navigation extends React.Component {
     render() {
         return(
             <div className={style.headerLinks}>
+                <div className={style.collapsedMenu} onClick={this.props.openCollapsedMenu}>
+                    <span className={style.menuIcon}>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                    <span class={style.menuText}>MENU</span>
+                </div>
                 <ul className={style.nav} style={{ 'opacity' : this.state.onSearch ? '0' : '1' }} >
                     <li className={style.navGroup}>
                         <div className={style.navGroupTitle}>

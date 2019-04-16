@@ -6,7 +6,7 @@ class Designer extends React.Component {
         super(props);
 
         this.state = {
-            image: 'https://s3.amazonaws.com/hrla28renttherunway/navbar/Designer.jpg',
+            image: 'https://s3.amazonaws.com/renttherunwayhrla28/navbar/Designer.jpg',
             sections : [
                 {
                     title: 'New Designers',

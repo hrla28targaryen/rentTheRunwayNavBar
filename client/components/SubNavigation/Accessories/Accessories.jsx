@@ -6,7 +6,7 @@ class Accessories extends React.Component {
         super(props);
 
         this.state = {
-            image: 'https://s3.amazonaws.com/hrla28renttherunway/navbar/Accessories.jpg',
+            image: 'https://s3.amazonaws.com/renttherunwayhrla28/navbar/Accessories.jpg',
             sections : [
                 {
                     title: 'Category',

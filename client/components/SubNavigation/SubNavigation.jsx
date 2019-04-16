@@ -7,9 +7,8 @@ class SubNavigation extends React.Component {
     }
 
     render() {
-        let menuId = this.props.id;
         return(
-            <div className={`${style.subNavigation} ${menuId}`}>
+            <div className={style.subNavigation}>
                 <ul className={style.subNavigationBlock}>
                     <div className={style.image}>
                         <img src={this.props.img} />
@@ -18,7 +17,7 @@ class SubNavigation extends React.Component {
                         this.props.sections.map( section => {
                             return (
                                 <li className={style.subNavigationList}>
-                                    <div>
+                                    <div className={style.navMenuHeaderBlock}>
                                         <span className={style.title}>{section.title}</span>
                                         <ul className={style.sectionList}>
                                             { section.links.map( link => <li><a href="">{ link }</a></li> ) }

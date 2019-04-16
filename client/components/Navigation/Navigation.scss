@@ -106,7 +106,7 @@
             padding-left: 10px;
             padding-right: 25px;
             border: 1px solid transparent;
-            background: transparent url(https://s3.amazonaws.com/hrla28renttherunway/icons/Search_icon.svg) no-repeat right;
+            background: transparent url(https://s3.amazonaws.com/renttherunwayhrla28/icons/Search_icon.svg) no-repeat right;
             background-size: contain;
             transition: all 0.5s ease-in-out;
             outline: 0;
@@ -145,4 +145,128 @@
         height: 30px;
     }
         
+}
+
+@media only screen and (min-width: 1430px) {
+
+    .menuText {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 1430px) {
+    .collapsedMenu {
+        display: none;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-align-items: center;
+        align-items: center;
+        line-height: 90px;
+        cursor: pointer;
+        padding-left: 20px;
+    }
+
+    .menuIcon {
+        height: 18px;
+        width: 23px;
+        line-height: 90px;
+        vertical-align: middle;
+        position: relative;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: 0.5s ease-in-out;
+        -moz-transition: 0.5s ease-in-out;
+        -o-transition: 0.5s ease-in-out;
+        transition: 0.5s ease-in-out;
+        cursor: pointer;
+        margin-top: 4px;
+
+        span {
+            display: block;
+            position: absolute;
+            height: 1px;
+            width: 100%;
+            background: #333333;
+            border-radius: 1px;
+            opacity: 1;
+            left: 0;
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+            -webkit-transition: 0.25s ease-in-out;
+            -moz-transition: 0.25s ease-in-out;
+            -o-transition: 0.25s ease-in-out;
+            transition: 0.25s ease-in-out;
+        }
+
+        span:nth-child(1) {
+            top: 0px
+        }
+
+        span:nth-child(2) {
+            top: 8px
+        }
+
+        span:nth-child(3) {
+            top: 16px
+        }
+    }
+
+    .menuText {
+        font-family: EngraversGothic BT, serif;
+        letter-spacing: 2px;
+        font-size: 14px;
+        text-transform: uppercase;
+        line-height: 90px;
+        margin-left: 15px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .headerLinks {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex: 1;
+        flex: 1;
+        justify-content: space-between;
+
+        .nav {
+            left: 0;
+
+            -webkit-transform: translateZ(0);
+            -moz-transform: translateZ(0);
+            -ms-transform: translateZ(0);
+            -o-transform: translateZ(0);
+            transform: translateZ(0);
+            -webkit-transition: left 0.2s cubic-bezier(0.65, 0.05, 0.36, 1);
+            -moz-transition: left 0.2s cubic-bezier(0.65, 0.05, 0.36, 1);
+            -o-transition: left 0.2s cubic-bezier(0.65, 0.05, 0.36, 1);
+            transition: left 0.2s cubic-bezier(0.65, 0.05, 0.36, 1);
+            border-left: none;
+            width: 300px;
+            left: -100vw;
+            height: 100vh;
+            display: block;
+            position: absolute;
+            margin-left: 0;
+            background-color: #FFFFFF;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            z-index: 300;
+        }
+    }
+
+    .navSearch {
+        display: none;
+    }
 }

@@ -74,3 +74,112 @@
         }
     }
 }
+
+@media only screen and (max-width: 1430px) {
+
+    .subNavigation {
+        width: auto;
+        padding: 0px;
+        margin-left: 0px;
+
+        .subNavigationBlock {
+            width: 100% !important;
+            -webkit-transform: translate3d(0, 0, 0);
+            -moz-transform: translate3d(0, 0, 0);
+            -ms-transform: translate3d(0, 0, 0);
+            -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+            display: block;
+            width: auto;
+            height: auto;
+            float: none;
+            margin: 0;
+            position: relative;
+            background-color: #F7F7F7;
+
+            .image {
+                display: none;
+                img {
+                    display: none;
+                }
+
+            }
+
+            .subNavigationList {
+                -webkit-transform: translate3d(0, 0, 0);
+                -moz-transform: translate3d(0, 0, 0);
+                -ms-transform: translate3d(0, 0, 0);
+                -o-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+                display: block;
+                width: auto;
+                height: auto;
+                float: none;
+                margin: 0;
+                position: relative;
+                background-color: #F7F7F7;
+
+                .navMenuHeaderBlock {
+                    border-top: 1px solid #DDDDDD;
+                    display: block;
+                    padding: 16px 0 14px 62px;
+                    font-family: 'EngraversGothic BT', serif;
+                    font-size: 12px;
+                    line-height: 18px;
+
+                    .title {
+                        font-family: 'Proxima Nova Regular', sans-serif;
+                        font-size: 14px;
+                        line-height: 18px;
+                    }
+
+                    .title::after {
+                        left: 39px;
+                        content: " ";
+                        background: url(https://s3.amazonaws.com/renttherunwayhrla28/icons/minus.svg) no-repeat;
+                        width: 11px;
+                        height: 11px;
+                        display: block;
+                        position: absolute;
+                        left: 18px;
+                        top: 26px;
+                        -webkit-transform: translateY(-50%);
+                        -moz-transform: translateY(-50%);
+                        -ms-transform: translateY(-50%);
+                        -o-transform: translateY(-50%);
+                        transform: translateY(-50%);
+                        margin: 0;
+                    }
+
+                    .sectionList{
+                        max-height: 1500px;
+                        visibility: visible;
+                        transition-delay: 0s;
+                        font-family: ProximaNova-Regular, Proxima-Nova, sans-serif;
+                        font-size: 14px;
+                        line-height: 18px;
+                        -webkit-transition: max-height 0.5s ease-in-out, visibility 0s linear;
+                        -webkit-transition-delay: 0s, 0.5s;
+                        -moz-transition: max-height 0.5s ease-in-out, visibility 0s linear 0.5s;
+                        -o-transition: max-height 0.5s ease-in-out, visibility 0s linear 0.5s;
+                        transition: max-height 0.5s ease-in-out, visibility 0s linear 0.5s;
+
+                        overflow: hidden;
+                        visibility: hidden;
+                        border-top: 1px solid #DDDDDD;
+
+                        li {
+                            border-bottom: 1px solid #DDDDDD;
+
+                            a {
+                                display: block;
+                                padding: 16px 0 14px 80px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

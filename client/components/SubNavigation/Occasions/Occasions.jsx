@@ -6,7 +6,7 @@ class Occasions extends React.Component {
         super(props);
 
         this.state = {
-            image: 'https://s3.amazonaws.com/hrla28renttherunway/navbar/Occassions.jpg',
+            image: 'https://s3.amazonaws.com/renttherunwayhrla28/navbar/Occassions.jpg',
             sections : [
                 {
                     title: 'Wear to Where',

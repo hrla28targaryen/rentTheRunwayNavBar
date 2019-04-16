@@ -3,20 +3,28 @@ import Navigation from '../Navigation/Navigation.jsx';
 import style from './MainNavigation.scss';
 import Logo from '../Logo/Logo.jsx';
 import Collapsible from 'react-collapsible';
+import CollapseNaviagtion from '../CollapseNavigation/CollapseNavigation.jsx';
 
 class MainNavigation extends React.Component {
     constructor(props) {
         super(props); 
 
         this.state = {
-            currentScrollHeight: 0
+            currentScrollHeight: 0,
+            openCollapsed: false
         }
+
+        this.openCollapsedMenu = this.openCollapsedMenu.bind(this);
     }
 
     componentDidMount() {
         window.addEventListener('scroll', () => {
             this.setState({currentScrollHeight: window.scrollY});
        });
+    }
+
+    openCollapsedMenu() {
+        this.setState({ openCollapsed: !this.state.openCollapsed });
     }
 
     render() {
@@ -34,7 +42,8 @@ class MainNavigation extends React.Component {
                             <Logo />
                         </a>
                     </div>
-                    <Navigation />
+                    <Navigation openCollapsedMenu={this.openCollapsedMenu} />
+                    <CollapseNaviagtion openCollapsed={this.state.openCollapsed} openCollapsedMenu={this.openCollapsedMenu}/>
                 </div>
                 <div className="skinny-banner-content" className={style.bannerContent}>
                     $80 Off 60-Day Unlimited Trial or 20% Off First Order with code: SOSMART

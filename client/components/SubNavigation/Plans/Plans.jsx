@@ -6,7 +6,7 @@ class Plans extends React.Component {
         super(props);
 
         this.state = {
-            image: 'https://s3.amazonaws.com/hrla28renttherunway/navbar/Plans.jpg',
+            image: 'https://s3.amazonaws.com/renttherunwayhrla28/navbar/Plans.jpg',
             sections : [
                 {
                     title: 'RTR Unlimited',
